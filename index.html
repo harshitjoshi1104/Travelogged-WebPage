@@ -294,6 +294,7 @@
       function myfunction() {
         // document.getElementById("idStaticFrame").classList.add("animPhone")
         if (countingOpen % 2 != 0) {
+          document.getElementById("idStaticFrame").style.display="flex"
           document.getElementById("idStaticFrame").classList.add("slideR");
           document.getElementById("idStaticFrame").classList.remove("slideL");
           document.getElementById("nav-Image").setAttribute("src","images/navIcon-crossImage.png")
@@ -308,6 +309,7 @@
         } else {
           document.getElementById("idStaticFrame").classList.add("slideL");
           document.getElementById("idStaticFrame").classList.remove("slideR");
+          
           console.log("Pressed 2");
           document.getElementById("nav-Image").setAttribute("src","images/navIcon-hamburger.png")
           document.getElementById("head-con").style.display="block";
