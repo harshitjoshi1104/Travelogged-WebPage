@@ -443,7 +443,7 @@ img.days-image{
     }
 
     div.left{
-        display: flex;
+        display: none;
         width: 300px;
         z-index: 10;
     }
