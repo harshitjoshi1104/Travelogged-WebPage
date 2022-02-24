@@ -1,0 +1,487 @@
+body {
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    justify-content: centert;
+    background-color: black;
+}
+
+.navBar{
+    display: none;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* top: 0; */
+    /* left: 0; */
+    z-index: 5;
+}
+
+#mainDivSize::before{
+    content: "";
+    background-image: url("../images/backgroundImage.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.4;
+    position: fixed;
+    /* top: 3%; */
+    /* left: 3%; */
+    height: 750px;
+    width: 100%;    
+}
+
+
+#mainDivSize{
+    /* padding: ; */
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    justify-content: space-evenly;
+}
+div.left{
+    background-color: #282850;
+    /* background: rgba(40,40,64,0.6); */
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center ;
+    color: #f5f5f786;
+    width:23%   ;
+    height: 700px;
+    position: fixed;
+    top:4%;
+    left:1%;
+}
+
+.left h1{
+    font-size: 30px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    color: tomato;
+    /* color: white; */
+    margin-top: 1mm;
+    margin-bottom: 1mm;
+}
+
+.left h2{
+    padding-left: 8mm;
+    padding-right: 8mm;
+    padding-top: 4mm;
+    padding-bottom: 4mm;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    cursor:pointer;
+    color: #f5f5f786;
+}
+.left h2:hover {
+    background-color: #393E46;
+    /* border: 10px; */
+    border-radius: 10px;
+}
+
+div.right{
+    /* background-color: green; */
+    width: 72%;
+    padding: 2mm;
+    position:absolute;
+    top: 4%;
+    left: 25%;
+    /* height: 700px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+/*  Details of right div */
+/* ######################################################################################################################### */
+/* ######################################################################################################################### */
+/* ######################################################################################################################### */
+
+
+.mainLogo-details{
+    /* padding-top: 1cm; */
+    /* background-image:url("../images/backgroundImage.jpg"); */
+    width: 97%;
+    height: 500px;
+    color: wheat;
+    /* background-color: bisque; */
+    /* background: rgba(61, 0, 0,0.19);  */
+    background: rgba(255,255,255,0.1);
+
+
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding-left: 5mm;
+    /* align-items: center; */
+    font-family: 'Lato', sans-serif !important;
+}
+
+.mainLogo-details h1{
+    font-size: 46px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    color: #fafafc;
+    margin: 0;
+}
+
+.mainLogo-details p{
+    margin: 10px;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    color: #f5f5f786;
+}
+.explore-buttons{
+    width: 18rem;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.button-explore{
+    cursor: pointer;
+    border: none;
+    width: 6rem;
+    height: 3rem;
+    padding-left: 2mm;
+    padding-right: 2mm;
+    border-radius: 5px;
+    
+
+}
+.button-explore:hover{
+    box-shadow: 0px 0px 0px rgb(0,150,255),0px 0px 20px rgb(0,150,255),0px 0px 80px rgb(0,150,255);
+}
+
+
+
+
+
+.scheduleDivs{
+    margin-top: 5mm;
+    margin-bottom: 5mm;
+    display: flex;
+    flex-direction: column;
+    width: 97%;
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+    /* background-color: #000000; */
+    color: #f5f5f786;
+    padding-bottom: 1cm;
+}
+
+.schedules{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 97%;
+    padding-top: 5mm;
+    padding-bottom:5mm ;
+    /* height: 300px; */
+
+    font-family: 'Lato', sans-serif !important;
+    line-height: 1.6em;
+    /* letter-spacing: 0.5mm; */
+    /* background: rgba(255,255,255,0.1); */
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 0px #86003C,0px 0px 20px #86003C,0px 0px 80px #86003C; */
+    box-shadow: 0px 0px 0px #393E46,0px 0px 20px #393E46,0px 0px 80px #393E46;
+
+    margin: 1cm;
+    justify-content:space-around;
+    align-items:center;
+}
+
+.scheduleDivs div.images-of-days{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 95%;
+    /* background-color: aqua; */
+    border-radius: 30px;
+}
+.scheduleDivs div.details-Days{
+    width: 50%;
+    height:80%;
+    display: flex;
+    /* background-color: brown; */
+    color: #f5f5f786;
+    /* background: rgba(0,0,0,0.7); */
+    /* box-shadow: 0px 0px 0px #86003C,0px 0px 20px #86003C,0px 0px 80px #86003C; */
+    box-shadow: 0px 0px 0px #393E46,0px 0px 20px #393E46,0px 0px 80px #393E46;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    justify-items: center;
+    padding: 5mm;
+    /* align-content:; */
+    /* align-items: ; */
+}
+.scheduleDivs div.details-Days h1{
+    color: tomato;
+}
+
+img.days-image{
+    width: 100%;
+    height: 100%;
+    border-radius:10px
+}
+
+#download-btn{
+    padding:3mm;
+    background-color: rgb(0,150,255);
+    border: none;
+    width: 10rem;
+    height: 3rem;
+    color: wheat;
+    font-size: 0.9rem;
+}
+#download-btn:hover{
+    box-shadow: 0px 0px 0px rgb(0,150,255),0px 0px 20px rgb(0,150,255),0px 0px 80px rgb(0,150,255);
+}
+
+
+/* ############################################################################################################################# */
+/* ############################################################################################################################# */
+/* ############################################################################################################################# */
+/* ############################################################################################################################# */
+/* ############################################################################################################################# */
+
+/* Creating left side */
+
+/* ############################################################################################################################# */
+/* ############################################################################################################################# */
+/* ############################################################################################################################# */
+/* ############################################################################################################################# */
+/* ############################################################################################################################# */
+
+.inclusions{
+    margin-top: 3mm;
+    width: 96%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    box-shadow: 0px 0px 0px #393E46,0px 0px 20px #393E46,0px 0px 80px #393E46;
+    padding-bottom: 4mm;
+}
+.inclusions h1{
+    /* color: rgb(0,150,255); */
+    color: white;
+    font-size: 30px;
+    margin-bottom: 1mm;
+    /* text-decoration:underline; */
+}
+.item-in-inclusions{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+    padding: 0mm;
+    margin-top: 5mm;
+    /* box-shadow: 0px 0px 0px#3D0000,0px 0px 20px #3D0000,0px 0px 80px #3D0000; */
+    background-color: #393E46;
+    border-radius: 15px 15px 10px 5px;
+}
+.item-in-inclusions:hover{
+    background-color: tomato;
+}
+
+.inclusion-img{
+    width: 60px;
+    height: 60px;
+}
+
+
+
+
+/* ################################################################################################################### */
+/* ################################################################################################################### */
+/* ################################################################################################################### */
+/* ################################################################################################################### */
+
+/* rifht div Why Us */
+/* ################################################################################################################### */
+/* ################################################################################################################### */
+/* ################################################################################################################### */
+/* ################################################################################################################### */
+
+.why-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: wheat; */
+    background: rgba(255,255,255,0.4);
+    width: 97%;
+    font-family: "Poppins",sans-serif;
+    /* height: 300px; */
+}
+.aboutUs{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 5mm;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Poppins",sans-serif;
+    font-weight: 600;
+}
+
+/* ########################################################################################################################### */
+/* ########################################################################################################################### */
+/* ########################################################################################################################### */
+
+/* footer */
+/* ########################################################################################################################### */
+/* ########################################################################################################################### */
+/* ########################################################################################################################### */
+
+.footer{
+    margin-top: 5mm;
+    padding-top: 1cm;
+    display: flex;
+    flex-direction: column;
+    width: 96%;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.7);
+    color: azure;
+    font-family: "Poppins",sans-serif;
+}
+
+
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-company{
+    width: 100%;
+    margin-top: 3cm;
+    margin-bottom: 1cm;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.company-about{
+    /* margin-top: ; */
+    display: flex;
+    flex-direction: column;
+}
+
+.company-about a{
+    text-decoration: none;
+    color: rgba(255,255,255,0.9);
+    margin: 3mm;
+
+}
+.company-about a:hover{
+    color: #f5f5f786;
+}
+
+@media (max-width:900px) 
+{
+
+    .slideL{
+        animation: slideLeft 500ms linear forwards;
+    }
+
+    .slideR{
+        animation: slideRight 500ms linear forwards;
+    }
+    @keyframes slideRight {
+        from{
+            left: -10cm;
+        }
+        to{
+            left: 0cm;
+        }
+    }
+
+    @keyframes slideLeft {
+        from{
+            left: 0cm;
+        }
+        to{
+            left:-10cm
+        }
+        
+    }
+
+
+    body{
+        /* flex-direction:row; */
+    }
+    #mainDivSize{
+        position: relative;
+        left: -2mm;
+    }
+
+    .navBar{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items:center;
+        background-color: #000000;
+        width: 100%;
+    }
+
+    div.left{
+        display: flex;
+        width: 300px;
+        z-index: 10;
+    }
+
+    div.right{
+        width:100%;
+        padding:1mm;
+        top: 0;
+        left: 0;
+    }
+    .mainLogo-details{
+        width: 100%;
+        padding-left: 5mm;
+    }
+
+    .scheduleDivs{
+        width: 100%;
+    }
+
+    .schedules{
+        width: 97%;
+        flex-direction: column;
+    }
+    .scheduleDivs div.images-of-days{
+        width: 90%;
+    }
+    .scheduleDivs div.details-Days{
+        width: 90%;
+    }
+
+    .aboutUs{
+        flex-direction: column;
+    }
+
+    .about-company{
+        flex-direction: column;
+    }
+    .company-about{
+        margin: 5mm;
+    }
+}
